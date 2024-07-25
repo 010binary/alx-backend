@@ -1,5 +1,5 @@
 # Pagination
-
+---
 ## Introduction
 Pagination is the process of dividing a large dataset into smaller, manageable chunks or pages. It is a crucial technique in web development to enhance performance and improve user experience by loading data in parts instead of all at once. Pagination helps in reducing the load time and memory consumption by breaking down the data into digestible sections.
 
