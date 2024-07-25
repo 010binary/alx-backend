@@ -28,7 +28,7 @@ class LIFOCache(BaseCaching):
                     print(f"DISCARD: {discarded_key}")
                 else:
                     self.order.remove(key)
-            
+
             self.cache_data[key] = item
             self.order.append(key)
 
