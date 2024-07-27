@@ -57,22 +57,22 @@ class Server:
 
         if index is None:
             index = 0
-        
+
         assert index < data_length, "Index out of range"
 
         data = []
-        next_index = index
+        next_idx = index
         for _ in range(page_size):
-            while next_index < data_length and next_index not in indexed_dataset:
-                next_index += 1
-            if next_index == data_length:
+            while next_idx < data_length and next_idx not in indexed_dataset:
+                next_idx += 1
+            if next_idx == data_length:
                 break
-            data.append(indexed_dataset[next_index])
-            next_index += 1
+            data.append(indexed_dataset[next_idx])
+            next_idx += 1
 
         return {
             'index': index,
-            'next_index': next_index,
+            'next_index': next_idx,
             'page_size': len(data),
             'data': data
         }
