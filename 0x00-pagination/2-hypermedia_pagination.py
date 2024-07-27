@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-This module provides pagination functionality for a dataset of popular baby names.
+This module provides pagination functionality for a dataset
+of popular baby names.
 """
 
 import csv
@@ -55,8 +56,8 @@ class Server:
         Raises:
             AssertionError: If page or page_size are not positive integers.
         """
-        assert isinstance(page, int) and page > 0, "Page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         dataset = self.dataset()
         start, end = index_range(page, page_size)
