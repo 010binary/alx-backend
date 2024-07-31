@@ -1,2 +1,1 @@
-i18 
-internation
+# 0x02. i18n
