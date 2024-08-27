@@ -1,3 +1,6 @@
+
+---
+
 # Redis Integration with Django and Node.js
 
 This guide will walk you through setting up and using Redis in both Django and Node.js projects. Redis is an in-memory data store used for caching, session management, and real-time data streaming.
@@ -208,3 +211,5 @@ publisher.publish('my_channel', 'Hello, World!');
 - [Redis Documentation](https://redis.io/documentation)
 - [django-redis Documentation](https://django-redis.readthedocs.io/en/stable/)
 - [Node.js Redis Client Documentation](https://github.com/redis/node-redis)
+
+---
